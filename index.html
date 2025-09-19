@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saagar Chaudhary | Data Scientist</title>
+    <meta name="description" content="Portfolio of Saagar Chaudhary, a Data Scientist and Machine Learning Engineer specializing in predictive modeling and building intelligent solutions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Saagar</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <canvas id="particles"></canvas>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Let's Build Intelligent Solutions Together</h1>
+                <p class="hero-description">
+                    A passionate Data Scientist & ML Engineer specializing in crafting predictive models, analyzing data, and building intelligent software applications.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img src="hero.jpeg" alt="Saagar Chaudhary" class="hero-image">
+                 <div class="floating-bubble bubble-1">
+                    <i class="fas fa-chart-line"></i><span>Machine Learning</span>
+                </div>
+                <div class="floating-bubble bubble-2">
+                    <i class="fas fa-database"></i><span>Data Science</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-title">What I Offer</h2>
+        <p class="section-subtitle">Data-driven solutions to solve complex problems</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning Models</h3>
+                <p>Developing and deploying predictive models for classification, regression, and clustering to forecast trends and automate decisions.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Data Analysis & Visualization</h3>
+                <p>Transforming raw data into actionable insights through exploratory data analysis and creating intuitive dashboards with tools like Tableau and Power BI.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-server"></i>
+                <h3>MLOps & Deployment</h3>
+                <p>Building robust MLOps pipelines to streamline model deployment, monitoring, and lifecycle management, ensuring scalability and reliability.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Tools and technologies I work with</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-category">Programming</div>
+                <div class="skill-name">Python</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                <div class="skill-name">R</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                <div class="skill-name">SQL</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Machine Learning</div>
+                <div class="skill-name">Scikit-learn</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                <div class="skill-name">TensorFlow</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                <div class="skill-name">PyTorch</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
+             <div class="skill-card">
+                <div class="skill-category">Data Analysis</div>
+                <div class="skill-name">Pandas</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                <div class="skill-name">NumPy</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 93%"></div></div>
+                <div class="skill-name">Statistical Analysis</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-category">Visualization</div>
+                <div class="skill-name">Tableau</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                <div class="skill-name">Power BI</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 82%"></div></div>
+                <div class="skill-name">Plotly/Seaborn</div>
+                <div class="skill-bar"><div class="skill-progress" style="width: 87%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Recent work and case studies</p>
+        <div class="projects-grid">
+            <div class="project-card" data-project-id="customer-churn">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Customer Churn Prediction</h3>
+                    <p class="project-description">Built an ML model achieving 94% accuracy in predicting customer churn, helping reduce customer attrition by 25%.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span><span class="tech-tag">XGBoost</span><span class="tech-tag">SHAP</span><span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-project-id="sentiment-analysis">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Real-time Sentiment Analysis</h3>
+                    <p class="project-description">NLP pipeline for analyzing social media sentiment with transformer models, processing 10K+ tweets per minute.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">BERT</span><span class="tech-tag">PyTorch</span><span class="tech-tag">Kafka</span><span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-link"></i> Live Demo</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-project-id="supply-chain">
+                <div class="project-image"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Supply Chain Optimization</h3>
+                    <p class="project-description">Developed forecasting models and optimization algorithms that reduced inventory costs by 30% while maintaining service levels.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Time Series</span><span class="tech-tag">Prophet</span><span class="tech-tag">Dash</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fas fa-file-alt"></i> Case Study</a>
+                        <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="testimonials">
+        <h2 class="section-title">What People Say</h2>
+        <p class="section-subtitle">Trusted by clients and colleagues worldwide</p>
+        <div class="testimonial-slider-container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <img src="https://i.pravatar.cc/100?img=1" alt="Dr. Anya Sharma" class="testimonial-avatar">
+                        <p class="testimonial-text">"Saagar's expertise in predictive modeling transformed our data analysis. His solutions are innovative, reliable, and were delivered with exceptional clarity."</p>
+                        <h4 class="testimonial-author">Dr. Anya Sharma</h4>
+                        <p class="testimonial-title">Research Scientist</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <img src="https://i.pravatar.cc/100?img=2" alt="Michael Chen" class="testimonial-avatar">
+                        <p class="testimonial-text">"Working with Saagar was a game-changer. He is not only technically proficient but also an excellent communicator who makes complex data understandable."</p>
+                        <h4 class="testimonial-author">Michael Chen</h4>
+                        <p class="testimonial-title">Head of Analytics</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                     <div class="testimonial-content">
+                        <img src="https://i.pravatar.cc/100?img=3" alt="Emily White" class="testimonial-avatar">
+                        <p class="testimonial-text">"The supply chain optimization model Saagar built for us was revolutionary. It cut our inventory costs by 30% without impacting service levels."</p>
+                        <h4 class="testimonial-author">Emily White</h4>
+                        <p class="testimonial-title">COO, Global Logistics</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss your data science needs</p>
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/saagar-chaudhary-0a99b4230/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/OGsaagar" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/ogsaagar" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="mailto:saagarchaudhary4@gmail.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; <span id="copyright-year">2025</span> Data Science Portfolio. Built with passion for data.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
