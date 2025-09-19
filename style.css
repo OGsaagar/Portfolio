@@ -477,10 +477,11 @@ footer p { color: var(--text-secondary); }
     }
     .hero-text {
         order: 2;
+
     }
     .hero-image-container {
         order: 1;
-        margin-bottom: 2rem;
+        margin-bottom: .7rem;
     }
     .hero-description {
         margin-left: auto;
@@ -491,6 +492,7 @@ footer p { color: var(--text-secondary); }
     }
     .hero-image {
         max-width: 350px;
+        margin-top: 4rem;
     }
 }
 
