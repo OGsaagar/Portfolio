@@ -97,17 +97,49 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Form Submission (Placeholder) ---
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const formData = new FormData(event.target);
-            const data = Object.fromEntries(formData.entries());
-            console.log('Form submitted:', data);
-            alert('Thank you for your message! I will get back to you soon.');
-            event.target.reset();
-        });
-    }
+    // const contactForm = document.getElementById('contact-form');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', (event) => {
+    //         event.preventDefault();
+    //         const formData = new FormData(event.target);
+    //         const data = Object.fromEntries(formData.entries());
+    //         console.log('Form submitted:', data);
+    //         alert('Thank you for your message! I will get back to you soon.');
+    //         event.target.reset();
+    //     });
+    // }
+// Initialize EmailJS
+(function() {
+    emailjs.init("LWtZDflclzyXjj9DH"); // 🔑 Replace with your EmailJS Public Key
+  })();
+  
+  const contactForm = document.getElementById("contact-form");
+  
+  if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+  
+      const formData = new FormData(event.target);
+  
+      // Send email using EmailJS
+      emailjs.send("service_9x3jgm3", "template_a12kmkd", {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        message: formData.get("message")
+      })
+      .then(() => {
+        alert("✅ Thank you for your message! I’ll get back to you soon.");
+        event.target.reset();
+      })
+      .catch((error) => {
+        alert("❌ Something went wrong. Please try again later.");
+        console.error("EmailJS Error:", error);
+      });
+    });
+  }
+  
+
+
 
     // --- Testimonial Slider ---
     const slider = document.querySelector('.testimonial-slider');
